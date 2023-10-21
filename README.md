@@ -24,6 +24,7 @@
 ## Usage Information
 
 - Please use as you see fit.
+- Link to the walkthrough video: https://drive.google.com/file/d/1fwDksAGc9x2cIdB9zOH4BV5nfc2jvIUq/view
 
 <a id="cont"></a>
 
