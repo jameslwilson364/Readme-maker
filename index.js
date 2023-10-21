@@ -21,6 +21,7 @@ const fs = require('fs');
 // email address; added to questions with instructions on how to reach me with additional questions
 // link the table of contents to the corresponding sections of the README
 
+function writeFile() {
 inquirer
   .prompt([
     {
@@ -75,44 +76,40 @@ inquirer
     console.log(response.projectName);
     const userName = `# ${response.projectName}
     
-    ## Description
-    - ${response.projectDescription}
+## Description
+- ${response.projectDescription}
 
-    ## Installation Instructions
-    - ${response.projectInstallation}
+## Installation Instructions
+- ${response.projectInstallation}
 
-    ## Usage Information
-    - ${response.projectUsage}
+## Usage Information
+- ${response.projectUsage}
 
-    ## Contribution Information
-    - ${response.Cont}
+## Contribution Information
+- ${response.Cont}
 
-    ## Test Instructions
-    - ${response.projectTest}
+## Test Instructions
+- ${response.projectTest}
 
-    ## License Information
-    - ${response.projectLicense}
+## License Information
+- ${response.projectLicense}
 
-    ## Questions?
-    - ${response.projectGitHub}
-    - ${response.projectEmail}
-    
-    ## End File`;
+## Questions?
+- ${response.projectGitHub}
+- ${response.projectEmail}
+
+## End File`;
     fs.writeFile('READMEGEN.md', `${userName}`, (err) =>
     err ? console.error(err) : console.log('Commit logged!')
     );
     
   });
+}
 
-  
 
-// const questions = [];
+function init() {
+  writeFile();
+}
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
+init();
