@@ -2,23 +2,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// overall goal
-// WHEN I am prompted for information about my application repository
-// THEN a high-quality, professional README.md is generated with the title of my project and sections entitled 
-// Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
-// TODO: Create an array of questions for user input
-
-
-// project title prompt; project title at the top #title
-// description; needs a section
-// installation instructions; needs a section
-// usage information; needs a section
-// contribution guidelines; needs a section
-// test instructions; needs a section
 // license gives a list of options exercise 20; also grab the list of options from github and adds a badge
-// github username; added to questions with a link to my GitHub profile
-// email address; added to questions with instructions on how to reach me with additional questions
+
 // link the table of contents to the corresponding sections of the README
 
 function writeFile() {
@@ -76,8 +62,15 @@ inquirer
     console.log(response.projectName);
     const userName = `# ${response.projectName}
     
-## Description
-- ${response.projectDescription}
+- Description: ${response.projectDescription}
+
+## Table of Contents
+1. Installation Instructions
+2. Usage Information
+3. Contribution Information
+4. Test Instructions
+5. License Information
+6. Questions and Contact Information
 
 ## Installation Instructions
 - ${response.projectInstallation}
@@ -95,12 +88,12 @@ inquirer
 - ${response.projectLicense}
 
 ## Questions?
-- ${response.projectGitHub}
+- https://github.com/${response.projectGitHub}
 - ${response.projectEmail}
 
 ## End File`;
     fs.writeFile('READMEGEN.md', `${userName}`, (err) =>
-    err ? console.error(err) : console.log('Commit logged!')
+    err ? console.error(err) : console.log('README logged!')
     );
     
   });
