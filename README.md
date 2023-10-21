@@ -18,6 +18,12 @@
 ## Installation Instructions
 
 - You will need to clone the repo, pull down the libraries referenced in the JSON package file. After those steps are complete simply run node index.js from the terminal line and follow the input instructions.
+- You will need to create an assets folder in the same directory as your index.js. Inside the assets folder you will need to save the license badges for the following licenses and name them as follows.
+- GNU General Public License v3.0 = GNU.png
+- MIT License = MIT.png
+- Mozilla Public License 2.0 = Mozilla.png
+- The Unlicense = Unlicense.png
+- These can be accessed through: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba#gnu
 
 <a id="usage"></a>
 
