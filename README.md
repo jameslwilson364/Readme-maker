@@ -1,39 +1,53 @@
-# Readme-maker
+# README Maker
 
-xxxx
+- Description: The goal of this project was to create a README maker using node from the terminal window. The projected aimed to capture user inputs from each of the six sections outlined for the user. The project also provides a selectable list of licenses and will display the license with its associated badge. The README will provide links to the user's github and email address. This README file was generated with the README Maker.
 
-- What was your motivation? xxxx
-- Why did you build this project? xxxx
-- What problem does it solve? xxxx
-- What did you learn? xxx
+![](./assets/Mozilla.svg)
 
-The main portions of the page that intended.
+## Table of Contents
 
-- xxxx
-- xxxx
-- xxx
+1. [Installation Instructions](#installation)
+2. [Usage Information](#usage)
+3. [Contribution Information](#cont)
+4. [Test Instructions](#test)
+5. [License Information](#license)
+6. [Questions and Contact Information](#questions)
 
-## Installation
+<a id="installation"></a>
 
-This will work as a stand alone webpage, no installation is required.
+## Installation Instructions
 
-Page consists of the following
+- You will need to clone the repo, pull down the libraries referenced in the JSON package file. After those steps are complete simply run node index.js from the terminal line and follow the input instructions.
 
-- xxx
-- xxx
-- xxxx
+<a id="usage"></a>
 
-link
+## Usage Information
 
-## Usage
+- Please use as you see fit.
 
-Feel free to use any and all parts of this.
+<a id="cont"></a>
 
-## Credits
+## Contribution Information
 
-Thanks to the folks at both MDN, W3 and StackOverflow. The walkthroughs on localStorage and fetch requests were particularly helpful
-## License
+- Please feel free to contribute to this project.
 
-Any body can use this as they see fit.
+<a id="test"></a>
 
+## Test Instructions
 
+- Test away from the command line.
+
+<a id="license"></a>
+
+## License Information
+
+- Mozilla Public License 2.0
+
+<a id="questions"></a>
+
+## Questions?
+
+- https://github.com/jameslwilson364
+- james.l.wilson364@gmail.com
+
+## End File

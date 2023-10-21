@@ -1,8 +1,6 @@
-// I need fs and inquirer
+// these lines call fs and inquirer
 const inquirer = require('inquirer');
 const fs = require('fs');
-
-// link the table of contents to the corresponding sections of the README
 
 // this function takes the user's input and then writes the READMEGEN file
 function writeFile() {
@@ -65,29 +63,37 @@ inquirer
     
 - Description: ${response.projectDescription}
 
-## Table of Contents
-1. Installation Instructions
-2. Usage Information
-3. Contribution Information
-4. Test Instructions
-5. License Information
-6. Questions and Contact Information
+![](./assets/GNU.svg)
 
+## Table of Contents
+1. [Installation Instructions](#installation)
+2. [Usage Information](#usage)
+3. [Contribution Information](#cont)
+4. [Test Instructions](#test)
+5. [License Information](#license)
+6. [Questions and Contact Information](#questions)
+
+<a id="installation"></a>
 ## Installation Instructions
 - ${response.projectInstallation}
 
+<a id="usage"></a>
 ## Usage Information
 - ${response.projectUsage}
 
+<a id="cont"></a>
 ## Contribution Information
 - ${response.projectCont}
 
+<a id="test"></a>
 ## Test Instructions
 - ${response.projectTest}
 
+<a id="license"></a>
 ## License Information
-- ${response.projectLicense} ![](./assets/GNU.svg)
+- ${response.projectLicense}
 
+<a id="questions"></a>
 ## Questions?
 - https://github.com/${response.projectGitHub}
 - ${response.projectEmail}
@@ -105,29 +111,37 @@ inquirer
     
 - Description: ${response.projectDescription}
 
-## Table of Contents
-1. Installation Instructions
-2. Usage Information
-3. Contribution Information
-4. Test Instructions
-5. License Information
-6. Questions and Contact Information
+![](./assets/MIT.svg)
 
+## Table of Contents
+1. [Installation Instructions](#installation)
+2. [Usage Information](#usage)
+3. [Contribution Information](#cont)
+4. [Test Instructions](#test)
+5. [License Information](#license)
+6. [Questions and Contact Information](#questions)
+
+<a id="installation"></a>
 ## Installation Instructions
 - ${response.projectInstallation}
 
+<a id="usage"></a>
 ## Usage Information
 - ${response.projectUsage}
 
+<a id="cont"></a>
 ## Contribution Information
 - ${response.projectCont}
 
+<a id="test"></a>
 ## Test Instructions
 - ${response.projectTest}
 
+<a id="license"></a>
 ## License Information
-- ${response.projectLicense} ![](./assets/MIT.svg)
+- ${response.projectLicense}
 
+<a id="questions"></a>
 ## Questions?
 - https://github.com/${response.projectGitHub}
 - ${response.projectEmail}
@@ -138,33 +152,42 @@ inquirer
     fs.writeFile('READMEGEN.md', `${userName}`, (err) =>
     err ? console.error(err) : console.log('README logged!')
     );
-  } else if (licenseChoice == 'Mozilla Public License 2.0' ) { const userName = `# ${response.projectName}
+  } else if (licenseChoice == 'Mozilla Public License 2.0' ) { 
+    const userName = `# ${response.projectName}
     
   - Description: ${response.projectDescription}
   
+  ![](./assets/Mozilla.svg)
+
   ## Table of Contents
-  1. Installation Instructions
-  2. Usage Information
-  3. Contribution Information
-  4. Test Instructions
-  5. License Information
-  6. Questions and Contact Information
+  1. [Installation Instructions](#installation)
+  2. [Usage Information](#usage)
+  3. [Contribution Information](#cont)
+  4. [Test Instructions](#test)
+  5. [License Information](#license)
+  6. [Questions and Contact Information](#questions)
   
+  <a id="installation"></a>
   ## Installation Instructions
   - ${response.projectInstallation}
   
+  <a id="usage"></a>
   ## Usage Information
   - ${response.projectUsage}
   
+  <a id="cont"></a>
   ## Contribution Information
   - ${response.projectCont}
   
+  <a id="test"></a>
   ## Test Instructions
   - ${response.projectTest}
   
+  <a id="license"></a>
   ## License Information
-  - ${response.projectLicense} ![](./assets/Mozilla.svg)
+  - ${response.projectLicense}
   
+  <a id="questions"></a>
   ## Questions?
   - https://github.com/${response.projectGitHub}
   - ${response.projectEmail}
@@ -181,29 +204,37 @@ inquirer
     
 - Description: ${response.projectDescription}
 
-## Table of Contents
-1. Installation Instructions
-2. Usage Information
-3. Contribution Information
-4. Test Instructions
-5. License Information
-6. Questions and Contact Information
+![](./assets/Unlicense.svg)
 
+## Table of Contents
+1. [Installation Instructions](#installation)
+2. [Usage Information](#usage)
+3. [Contribution Information](#cont)
+4. [Test Instructions](#test)
+5. [License Information](#license)
+6. [Questions and Contact Information](#questions)
+
+<a id="installation"></a>
 ## Installation Instructions
 - ${response.projectInstallation}
 
+<a id="usage"></a>
 ## Usage Information
 - ${response.projectUsage}
 
+<a id="cont"></a>
 ## Contribution Information
 - ${response.projectCont}
 
+<a id="test"></a>
 ## Test Instructions
 - ${response.projectTest}
 
+<a id="license"></a>
 ## License Information
-- ${response.projectLicense} ![](./assets/Unlicense.svg)
+- ${response.projectLicense}
 
+<a id="questions"></a>
 ## Questions?
 - https://github.com/${response.projectGitHub}
 - ${response.projectEmail}
@@ -220,10 +251,12 @@ inquirer
 });
 } 
 
+// this function calls the writeFile
 function init() {
   writeFile();
 }
 
+// this initializes the readme maker
 init();
 
 
